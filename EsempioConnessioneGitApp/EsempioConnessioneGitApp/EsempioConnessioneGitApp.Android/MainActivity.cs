@@ -29,6 +29,14 @@ namespace EsempioConnessioneGitApp.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());
+            try
+            {
+                //todo
+            }
+            catch (Exception exception)
+            {
+                Crashes.TrackError(exception);
+            }
         }
     }
 }
